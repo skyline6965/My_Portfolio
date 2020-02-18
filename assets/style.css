@@ -1,0 +1,104 @@
+body {
+  font-family: "sofia-pro";
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  align-content: center;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+h1 {
+  font-family: "sofia-pro";
+  font-size: 48px;
+  font-weight: 200;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  color: white;
+  margin-top: 115px;
+}
+
+/* h2 {
+  margin: 0;
+} */
+
+.intro-line {
+  border: solid;
+  height: 70px;
+  width: 1px;
+  position: absolute;
+  left: 84px;
+  top: 0;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-color: #ff502f;
+}
+
+
+#name-intro {
+  color: white;
+  text-align: left;
+  position: relative;
+  left: 94px;
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  width: fit-content;
+  margin: 0;
+}
+
+.hero {
+  background-color: #004d61;
+  height: 768px;    
+  width: 100%;
+  text-align: center;    
+  padding-top: 41px;
+}
+
+.skills-container-top {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-container-btm {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.skills {
+  height: 53px;  
+  border-radius: 2px;
+  background-color: #0f5e72;
+  border: none;
+  text-align: center;  
+  margin: 8px;
+}
+
+p {
+  color: #5bd1d7;
+  margin: 16px;
+  font-size: 18px;
+  font-family: "quicksand";
+}
+
+.my-work-links {
+  width: 379px;
+  height: 376px;
+  border-radius: 4px;
+  box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
