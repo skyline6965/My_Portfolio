@@ -65,7 +65,17 @@ h4 {
   border-color: #ff502f;
 }
 
-#linkedin-btn {
+.mediaBtn {
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  position: relative;
+  right: 72px;
+  bottom: 40px;
+  float: right;
+}
+
+/* #linkedin-btn {
   position: absolute;
   right: 137px;
   top: 40px;
@@ -75,7 +85,7 @@ h4 {
   position: absolute;
   right: 81px;
   top: 40px;
-}
+} */
 
 
 #name-intro {
@@ -161,15 +171,22 @@ p {
   margin: 0;
 }
 
+.my-work-links:hover {
+  opacity: 1;
+  
+}
+
 #middle-work {
   position: relative;
   bottom: 53px;
   margin: 0 33px;
 }
 
-.about-me {
-  
+.myWorkImgs {
+  width: 379px;
+  height: 280px;
 }
+
 
 #interests-header {
   font-size: 48px;
@@ -210,24 +227,32 @@ p {
 
 #dg-basket {
   position: relative;
-  top: 77px;
+  top: 76px;
   right: 69px;
+  width: 45px;
+  height: 98px;
 }
 
 #drumset {
   position: relative;
-  top: 89px;
+  top: 92px;
+  width: 140px;
+  height: 82px;
 }
 
 #drone-img {
   position: relative;
   top: 56px;
   left: 32px;
+  width: 104px;
+  height: 45px;
 }
 
 #controller-img {
   position: relative;
   top: 64px;
+  width: 111.6px;
+  height: 60.3px;
 }
 
 .contact-me {
@@ -290,7 +315,7 @@ textarea {
 
 
 button:hover {
-  background-color: #004d61;;
+  background-color: #ff502f;;
 }
 
 
