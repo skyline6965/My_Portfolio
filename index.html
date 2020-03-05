@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/lxx1uqx.css">
     <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 
 
 </head>
@@ -49,7 +50,7 @@
 
     <div class="my-work-container">
         <a class="my-work-links" href="https://github.com/jackellis520/ResponsiveRecipes">
-            <div><img class="myWorkImgs" src="./assets/imgs/Mockup_Recipe_laptop@2x.png" alt="">
+            <div class="my-work-links"><img class="myWorkImgs" src="./assets/imgs/Mockup_Recipe_laptop@2x.png" alt="">
                 <h3 class="my-work-titles">Responsive Recipes</h3>
             </div>
         </a>
@@ -60,7 +61,7 @@
             </div>
         </a>
         <a href="https://skyline-studios-app.herokuapp.com/">
-            <div class="my-work-links"><img src="" alt="" class="myWorkImgs">
+            <div class="my-work-links"><img src="./assets/imgs/Macbook_Studio@2x.png" alt="skyline studios mock up" class="myWorkImgs">
                 <h3 class="my-work-titles">Skyline Studios</h3>
             </div>
         </a>
@@ -138,12 +139,28 @@
                 HTML/CSS, Javascript, Bootstrap, <br> EdamamAPI, Node.js
             </div>
             <div class="project-links">
-                <img src="./assets/imgs/computer@2x.png" alt="view site">
-                <a  href="">VISIT SITE</a>
+                <img src="./assets/imgs/computer.svg" alt="view site">
+                <a id="visit-site" href="">VISIT SITE</a>
+
+                <img src="./assets/imgs/github.svg" alt="">
+                <a id="view-source" href="">VIEW SOURCE</a>
+            </div>
+            <div class="role">
+                <h5>ROLE</h5>
+                The responsive recipes was a team of 4 people,
+                my role was project manager, HTML frame-work, CSS
             </div>
         </div>
     </div>
 
 </body>
+
+<script type="text/javascript">
+
+    document.getElementById('my-work-links').addEventListener('click', function () {
+        document.querySelector('.bg-modal').style.display = 'flex';
+    });
+
+</script>
 
 </html>
