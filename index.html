@@ -6,98 +6,247 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kyle Barnhouse</title>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/lxx1uqx.css">
     <link rel="stylesheet" href="assets/style.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"
+        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <!-- Hero Start -->
     <div class="hero">
         <div class="intro-line"></div>
         <h2 id="name-intro">Kyle Barnhouse</h2>
-        <a href="https://www.linkedin.com/in/kyle-barnhouse-690330ab/" target="blank"><img class="mediaBtn"
-                src="./assets/imgs/in@2x.png" alt=""></a>
-        <a href="https://github.com/skyline6965" target="blank"><img class="mediaBtn" src="./assets/imgs/github.png"
-                alt=""></a>
+        <div class="media-div">
+            <a href="https://www.linkedin.com/in/kyle-barnhouse-690330ab/" target="blank"><img class="mediaBtn"
+                    src="./assets/imgs/in@2x.png" alt="">
+            </a>
+            <a href="https://github.com/skyline6965" target="blank"><img class="mediaBtn" src="./assets/imgs/github.png"
+                    alt="">
+            </a>
+            <a href="./assets/imgs/My_New_Resume.pdf" id="resumeBtn">RESUME</a>
+        </div>
+
         <h1>Hi, I'm Kyle Barnhouse, a <br>front end developer.</h1>
-        <div class="skills-container-top">
+        <div class="skills-container">
             <div class="skills">
-                <p>MySQL</p>
+                MySQL
             </div>
             <div class="skills">
-                <p>HTML5/CSS3</p>
+                HTML5/CSS3
             </div>
             <div class="skills">
-                <p>React</p>
+                React
             </div>
             <div class="skills">
-                <p>NODE.js</p>
+                NODE.js
             </div>
         </div>
-        <div class="skills-container-btm">
+        <div class="skills-container">
             <div class="skills">
-                <p>mongoDB</p>
+                mongoDB
             </div>
             <div class="skills">
-                <p>Javascript</p>
+                Javascript
             </div>
         </div>
     </div>
+    <!-- Hero End -->
 
+    <!-- My Work Start -->
     <div class="my-work-container">
-        <a class="my-work-links" href="https://github.com/jackellis520/ResponsiveRecipes">
-            <div class="my-work-links"><img class="myWorkImgs" src="./assets/imgs/Mockup_Recipe_laptop@2x.png" alt="">
+        <a id="my-work-links1" data-target=".modal1">
+            <div class="my-work-links">
+                <img class="myWorkImgs" src="./assets/imgs/Mockup_Recipe_laptop@2x.png" alt="">
                 <h3 class="my-work-titles">Responsive Recipes</h3>
             </div>
         </a>
-        <a href="https://github.com/skyline6965/FriendFinder">
-            <div class="my-work-links" id="middle-work"><img class="myWorkImgs"
-                    src="./assets/imgs/Mockup_DG_laptop@2x.png" alt="">
-                <h3 class="my-work-titles">DGTeamMate</h3>
-            </div>
-        </a>
-        <a href="https://skyline-studios-app.herokuapp.com/">
-            <div class="my-work-links"><img src="./assets/imgs/Macbook_Studio@2x.png" alt="skyline studios mock up" class="myWorkImgs">
-                <h3 class="my-work-titles">Skyline Studios</h3>
-            </div>
-        </a>
+        <div id="middle-work">
+            <a id="my-work-links2" data-target=".modal2">
+                <div class="my-work-links">
+                    <img class="myWorkImgs" src="./assets/imgs/Mockup_DG_laptop@2x.png" alt="">
+                    <h3 class="my-work-titles">DGTeamMate</h3>
+                </div>
+            </a>
+        </div>
+
+        <div id="right-work">
+            <a id="my-work-links3" data-target=".modal3">
+                <div class="my-work-links">
+                    <img src="./assets/imgs/Macbook_Studio@2x.png" alt="skyline studios mock up" class="myWorkImgs">
+                    <h3 class="my-work-titles">Skyline Studios</h3>
+                </div>
+            </a>
+        </div>
 
     </div>
+    <!-- My Work End -->
 
+    <!-- Modal Pop Up Start -->
+    <!-- modal ONE -->
+    <div class="bg-modal modal1">
+        <div class="modal-content">
+            <div class="modal-head">
+                <h4 class="modal-header">Responsive Recipes</h4>
+                <hr class="modal-hr" id="short-hr">
+                <div class="close-btn">+</div>
+            </div>
+            <div class="modal-left">
+                <div class="project-disc">
+                    The Responsive Recipes website gives people who enjoy cooking a place to search for recipes based on
+                    their dietary restrictions or food allergies.
+                </div>
+                <div class="project-links">
+                    <img src="./assets/imgs/computer.svg" alt="view site">
+                    <a id="visit-site" href="https://jackellis520.github.io/ResponsiveRecipes/" target="blank">VISIT
+                        SITE</a>
+
+                    <img src="./assets/imgs/github.svg" alt="">
+                    <a id="view-source" href="https://github.com/jackellis520/ResponsiveRecipes" target="blank">VIEW
+                        SOURCE</a>
+                </div>
+            </div>
+            <div class="modal-right">
+                <div class="tech-used">
+                    <h5 id="tech-headline">TECHNOLOGIES USED</h5>
+                    HTML/CSS, Javascript, Bootstrap, <br> EdamamAPI, Node.js
+                </div>
+
+                <div class="role">
+                    <h5>ROLE</h5>
+                    With a team of 4 people,
+                    my role was project manager, HTML frame-work, CSS
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal TWO -->
+    <div class="bg-modal modal2">
+        <div class="modal-content">
+            <div class="modal-head">
+                <h4 class="modal-header">DGTeamMate</h4>
+                <hr class="modal-hr">
+                <div class="close-btn2">+</div>
+            </div>
+            <div class="modal-left">
+                <div class="project-disc">
+                    A fun app where you answer questions based on your personal feeling and/or oppinion towards certain
+                    aspects of disc golf. The end result shows you which pro would match your answers most similarly.
+                </div>
+                <div class="project-links">
+                    <img src="./assets/imgs/computer.svg" alt="view site">
+                    <a id="visit-site" href="https://dgteam-mate.herokuapp.com/" target="blank">VISIT SITE</a>
+
+                    <img src="./assets/imgs/github.svg" alt="">
+                    <a id="view-source" href="https://github.com/skyline6965/FriendFinder" target="blank">VIEW
+                        SOURCE</a>
+                </div>
+            </div>
+            <div class="modal-right">
+                <div class="tech-used">
+                    <h5 id="tech-headline">TECHNOLOGIES USED</h5>
+                    HTML/CSS, Javascript, Bootstrap, Node.js
+                </div>
+
+                <div class="role">
+                    <h5>ROLE</h5>
+                    Created the app using Bootstrap as framework.
+                    The algorithm outcome was developed using Javascript.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal THREE -->
+    <div class="bg-modal modal3">
+        <div class="modal-content">
+            <div class="modal-head">
+                <h4 class="modal-header">Skyline Studios</h4>
+                <hr class="modal-hr">
+                <div class="close-btn3">+</div>
+            </div>
+
+            <div class="modal-left">
+                <div class="project-disc">
+                    A full stack website constructed using React. This was our final project from the coding bootcamp. A
+                    student on the team owned a local music studio and wanted a site where people could reserve studio
+                    time for recording or for lessons.
+                </div>
+                <div class="project-links">
+                    <img src="./assets/imgs/computer.svg" alt="view site">
+                    <a id="visit-site" href="https://skyline-studios-app.herokuapp.com/" target="blank">VISIT SITE</a>
+
+                    <img src="./assets/imgs/github.svg" alt="">
+                    <a id="view-source" href="https://github.com/skyline6965/Project-3" target="blank">VIEW SOURCE</a>
+                </div>
+            </div>
+            <div class="modal-right">
+                <div class="tech-used">
+                    <h5 id="tech-headline">TECHNOLOGIES USED</h5>
+                    React.js, Node.js, Express.js, Passport.js, HTML/CSS, Javascript, Bulma.io
+                </div>
+
+                <div class="role">
+                    <h5>ROLE</h5>
+                    Using mongoDB, created the database that stored the studio’s
+                    schedule as well as the user’s log in.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Pop Up End -->
+
+    <!-- About Me/Interests Start -->
     <div class="about-me">
-        <h4>ABOUT ME</h4>
+        <h4 id="about-me-header">ABOUT ME</h4>
         <h1 id="interests-header">I live in Austin, Tx and My
             <br>Interests Are...
         </h1>
         <div class="interests-container">
             <div class="interests-blocks" id="dg-block">
-                <h3 class="interests-title">Disc Golf</h3>
-                <p class="interests-subhead">Good for the Soul</p>
-                <img src="./assets/imgs/noun_Disc Golf Basket_1299@2x.png" alt="" id="dg-basket">
+                <img id="basket" src="./assets/imgs/DG.svg" alt="disc golf basket">
+                <h3>Disc Golf</h3>
+                <hr>
+                <p>Disc golf has taught me a lot about myself and life. I’ve learned how to approach goals with strategy
+                    and focus.</p>
             </div>
+
             <div class="interests-blocks" id="music-block">
-                <h3 class="interests-title">Music</h3>
-                <p class="interests-subhead">For Creativity</p>
-                <img src="./assets/imgs/noun_drums_1126330@2x.png" alt="" id="drumset">
+                <img id="drums" src="./assets/imgs/drums.svg" alt="drums">
+                <h3>Music</h3>
+                <hr>
+                <p>Music is in my blood and has always been an important part of my life. I use music to help let out my
+                    creative side.</p>
             </div>
+
             <div class="interests-blocks" id="drone-block">
-                <h3 class="interests-title">Drones</h3>
-                <p class="interests-subhead">And Other Tech</p>
-                <img src="./assets/imgs/Path 44@2x.png" alt="" id="drone-img">
+                <img id="drone" src="./assets/imgs/drone.svg" alt="">
+                <h3>Drones</h3>
+                <hr>
+                <p>I love drones and new tech. Technology is fascinating and I can't wait to see all the cool things
+                    that will come out in my lifetime.</p>
             </div>
+
             <div class="interests-blocks" id="game-block">
-                <h3 class="interests-title">Games</h3>
-                <p class="interests-subhead">For Relaxation</p>
-                <img src="./assets/imgs/noun_Video Game Controller_38680@2x.png" alt="" id="controller-img">
+                <img id="controller" src="./assets/imgs/game2.svg" alt="">
+                <h3>Games</h3>
+                <hr>
+                <p>I'm a big gamer. I learn a lot of proactive teamwork skills through RPGs. It’s one of my favorite
+                    ways to unwind.</p>
             </div>
         </div>
     </div>
 
+    <!-- About Me/Interests End -->
 
+    <!-- Contact Me Start -->
     <div class="card">
         <div class="card-intro">
             <h4 id="contact-me-header">CONTACT ME</h4>
@@ -105,7 +254,6 @@
         </div>
 
         <form>
-
             <label for="name">Name*</label>
             <input type="text" id="name">
             <br>
@@ -117,49 +265,52 @@
             <label for="msg">Message*</label>
             <textarea id="msg"></textarea>
 
-            <button class="submit-form-btn" type="submit">SEND</button>
+            <button class="submit-form-btn" type="submit" id="submitBtn">SEND</button>
 
         </form>
 
     </div>
-    <div class="bg-modal">
-        <div class="modal-content">
-            <h4>Responsive Recipes</h4>
-            <hr class="modal-hr">
-            <button class="modal-x-btn">
-                <img class="x-img" src="./assets/imgs/x@2x.png" alt="close modal pop-up">
-            </button>
 
-            <div class="project-disc">
-                The responsive recipes website gives people who enjoy cooking a place to search for recipes based on
-                their dietary restrictions or food allergies.
-            </div>
-            <div class="tech-used">
-                <h5 id="tech-headline">TECHNOLOGIES USED</h5>
-                HTML/CSS, Javascript, Bootstrap, <br> EdamamAPI, Node.js
-            </div>
-            <div class="project-links">
-                <img src="./assets/imgs/computer.svg" alt="view site">
-                <a id="visit-site" href="">VISIT SITE</a>
+    <!-- Contact Me End -->
 
-                <img src="./assets/imgs/github.svg" alt="">
-                <a id="view-source" href="">VIEW SOURCE</a>
-            </div>
-            <div class="role">
-                <h5>ROLE</h5>
-                The responsive recipes was a team of 4 people,
-                my role was project manager, HTML frame-work, CSS
-            </div>
-        </div>
-    </div>
+
 
 </body>
 
 <script type="text/javascript">
 
-    document.getElementById('my-work-links').addEventListener('click', function () {
-        document.querySelector('.bg-modal').style.display = 'flex';
+    document.getElementById('my-work-links1').addEventListener('click', function () {
+        document.querySelector('.modal1').style.display = 'flex';
     });
+
+    document.querySelector('.close-btn').addEventListener('click', function () {
+        document.querySelector('.modal1').style.display = 'none';
+    });
+
+    document.getElementById('my-work-links2').addEventListener('click', function () {
+        document.querySelector('.modal2').style.display = 'flex';
+    });
+
+    document.querySelector('.close-btn2').addEventListener('click', function () {
+        document.querySelector('.modal2').style.display = 'none';
+    });
+
+    document.getElementById('my-work-links3').addEventListener('click', function () {
+        document.querySelector('.modal3').style.display = 'flex';
+    });
+
+    document.querySelector('.close-btn3').addEventListener('click', function () {
+        document.querySelector('.modal3').style.display = 'none';
+    });
+
+    // $("#submitBtn").on('click', function () {
+    //     event.preventDefault();
+    //     var newEmail = {
+    //         name: $("#name").val().trim(),
+    //         email: $("#email").val().trim(),
+    //         message: $("#message")
+    //     };
+    // });
 
 </script>
 

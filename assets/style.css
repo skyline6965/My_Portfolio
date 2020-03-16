@@ -9,6 +9,18 @@ body {
   width: 100%;
 }
 
+a {
+  cursor: pointer;
+}
+
+p {  
+  margin: 16px;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+}
+
 h1 {
   font-family: "sofia-pro";
   font-size: 48px;
@@ -41,6 +53,7 @@ h3 {
   font-style: normal;
   line-height: 1.19;
   letter-spacing: normal;
+  margin: 8px auto 16px;
   
 }
 
@@ -51,7 +64,29 @@ h4 {
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;  
-  letter-spacing: -0.43px;  
+  letter-spacing: -0.43px; 
+  display: inline-block; 
+}
+
+
+h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: -0.34px;
+  text-align: left;
+  color: #348498;
+}
+
+hr {
+  background: #ff502f;
+  border-style: none;
+  height: 2px;
+  border-radius: 4px; 
+  width: 40px; 
 }
 
 .intro-line {
@@ -67,14 +102,37 @@ h4 {
   border-color: #ff502f;
 }
 
+.media-div {  
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+  display: flex;
+  align-content: center;
+  padding: 24px;
+  margin: 0 4%;
+}
+
 .mediaBtn {
   width: 40px;
   height: 40px;
+  margin: 8px;  
+}
+
+#resumeBtn {
+  width: 114px;
+  height: 40px;
+  background-color: white;
+  font-family: "sofia-pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  padding: 11px 24px;
+  border-radius: 25px;
   margin: 8px;
-  position: relative;
-  right: 72px;
-  bottom: 40px;
-  float: right;
+  color: #ff502f;
 }
 
 
@@ -104,24 +162,22 @@ h4 {
   padding-top: 41px;
 }
 
-.skills-container-top {
+.skills-container {
   width: 40%;
   text-align: center;
   margin: auto;
   display: flex;
   justify-content: center;
-}
-
-.skills-container-btm {
-  width: 40%;
-  text-align: center;
-  margin: auto;
-  display: flex;
-  justify-content: center;
+  color: #5bd1d7;
+  font-family: "quicksand";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .skills {
-  height: 53px;  
+  padding: 16px; 
   border-radius: 2px;
   background-color: #0f5e72;
   border: none;
@@ -129,12 +185,7 @@ h4 {
   margin: 8px;
 }
 
-p {
-  color: #5bd1d7;
-  margin: 16px;
-  font-size: 16px;
-  font-family: "quicksand";
-}
+
 
 .my-work-container {
   display: flex;
@@ -161,11 +212,6 @@ p {
   margin: 0;
 }
 
-.my-work-links:hover {
-  opacity: 1;
-
-}
-
 #middle-work {
   position: relative;
   bottom: 53px;
@@ -182,6 +228,12 @@ p {
   text-align: center;
 }
 
+#about-me-header {
+  font-family: "quicksand";
+  font-style: normal;
+  font-weight: bold;
+}
+
 
 #interests-header {
   font-size: 48px;
@@ -192,71 +244,46 @@ p {
   letter-spacing: normal;
   text-align: center;
   color: #004d61;
-  margin: 0 0 60px 0;
+  margin: 0 0 72px 0;
 }
 
 .interests-container {
   display: flex;
   justify-content: center;
+  padding: 0 17%;
 }
 
 .interests-blocks {
-  min-width: 277px;
-  height: 277px;
-  border-radius: 4px;
-  background-color: #004d61;
-  margin: 0 16px;
-  text-align: center;
-  
+  margin: 0 auto;
+  width: 250px;
 }
 
-.interests-title {
-  color: white;
-  margin: 32px 0 10px 0;
-}
-
-.interests-subhead {
-  margin: 0;
-  color: white;
-  font-family: "quicksand";
-}
-
-#dg-basket {
-  position: relative;
-  top: 76px;
-  right: 69px;
-  width: 45px;
-  height: 98px;
-}
-
-#drumset {
-  position: relative;
-  top: 92px;
-  width: 140px;
-  height: 82px;
-}
-
-#drone-img {
-  position: relative;
-  top: 56px;
-  left: 32px;
-  width: 104px;
-  height: 45px;
-}
-
-#controller-img {
-  position: relative;
-  top: 64px;
-  width: 111.6px;
-  height: 60.3px;
-}
-
-.contact-me {
+#basket {
 
 }
+#drums {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+#drone {
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+#controller {
+  margin-top: 13px;
+  margin-bottom: 12px;
+}
+
+/* .contact-me {
+
+} */
 
 #contact-me-header {
   margin: 40px 0 16px 0;
+  color: #348498;
+  font-family: "quicksand";
+  font-style: normal;
+  font-weight: bold;
 }
 
 .card {
@@ -267,7 +294,7 @@ p {
   border-radius: 4px;
   box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
-  
+  text-align: center;
 
 }
 
@@ -280,6 +307,7 @@ p {
 form {  
   padding: 52px 100px 0 100px;
   align-content: center;
+  text-align: left;
 }
 
 label {
@@ -318,7 +346,7 @@ button:hover {
 .submit-form-btn {
   width: 106px;
   height: 48px;
-  border-radius: 2px;  
+  border-radius: 25px;  
   margin: 32px 0 48px;
   position: relative;
   font-family: "sofia-pro";
@@ -333,13 +361,12 @@ button:hover {
   letter-spacing: normal;
 }
 
-.bg-modal {
+.bg-modal, .modal1, .modal2, .modal3{
   width: 100%;
   height: 100%;
-  background-color: rgba( 0 ,0 ,0 , 0.7 );  
-  position: sticky;
+  background-color: rgba( 0, 0, 0, 0.85 );  
+  position: fixed;
   top: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -351,35 +378,63 @@ button:hover {
   height: 313px;
   background-color: white;
   padding: 0px 40px;
+  position: relative;
 }
 
 .modal-hr {
-  width: 70%;
-  float: right;
-  border: solid 1px #ff502f;  
-  border-radius: 2px;
-  position: relative;
-  bottom: 42px;
-  right: 53px;
-}
-
-.modal-x-btn {
-  width: 20px;
-  height: 20px;
+  width: 68%;  
+  background: #ff502f;
+  border-style: none;
+  height: 2px;
+  border-radius: 4px;
   position: relative;  
-  bottom: 62px;
-  float: right;
-  clear: right;
-  font-family: "sofia-pro";
-  font-size: 20px;
-  padding: 0;
-  margin: 0;
-  border: none;
-  background-color: white;
+  left: 8px; 
+  top: 16px;
+  display: inline-block;
 }
 
-.modal-x-btn:hover {
-  background-color: white;
+#short-hr {
+  left: 16px;
+}
+
+
+.modal-head {
+  display: inline-block;
+  width: 100%;
+}
+
+.modal-header {
+  width: 154px;
+  border: none;
+  padding: 0;
+}
+
+.modal-left {
+  float: left;
+  width: 43%;
+  display: block;
+  margin: 16px auto;
+}
+
+.modal-right {
+  width: 48%;
+  float: right;
+  margin: 16px auto;
+}
+
+.close-btn, .close-btn2, .close-btn3{
+  position: absolute; 
+  font-family: "sofia-pro";
+  font-size: 64px;  
+  border: none;
+  right: 32px;
+  top: 0;
+  transform: rotate( 135deg );
+  color: #ff502f;
+  font-weight: 100;
+}
+
+.close-btn:hover, .close-btn2:hover, .close-btn3:hover {
   cursor: pointer;
 }
 
@@ -391,7 +446,6 @@ button:hover {
 }
 
 .project-disc {
-  width: 44%;  
   padding: 0;
   margin: 0;
   font-size: 16px;
@@ -415,9 +469,7 @@ button:hover {
   letter-spacing: normal;
   text-align: left;
   color: #000000;
-  float: right; 
-  position: relative;
-  right: 96px; 
+  margin-bottom: 32px;
 }
 
 #tech-headline {
@@ -445,9 +497,7 @@ button:hover {
 }
 
 .role {
-  float: right;
-  clear: both;  
-  width: 45%;  
+  
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -456,20 +506,9 @@ button:hover {
   letter-spacing: normal;
   text-align: left;
   color: #000000;
-  position: relative;
-  bottom: 42px;
+  
 }
 
-h5 {
-  margin: 0 0 8px 0;
-  font-size: 14px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.29;
-  letter-spacing: -0.34px;
-  text-align: left;
-  color: #348498;
-}
+
 
 
