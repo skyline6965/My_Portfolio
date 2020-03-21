@@ -30,7 +30,7 @@ h1 {
   line-height: 1.13;
   letter-spacing: normal;
   color: white;
-  margin-top: 115px;
+  margin: 115px 0 24px;
 }
 
 h2 {
@@ -224,7 +224,7 @@ hr {
 }
 
 .about-me {
-  margin-bottom: 240px;
+  margin-bottom: 200px;
   text-align: center;
 }
 
@@ -232,6 +232,7 @@ hr {
   font-family: "quicksand";
   font-style: normal;
   font-weight: bold;
+  color: #348498;
 }
 
 
