@@ -29,8 +29,7 @@ h1 {
   font-style: normal;
   line-height: 1.13;
   letter-spacing: normal;
-  color: white;
-  margin: 115px 0 24px;
+  color: white;  
 }
 
 h2 {
@@ -160,6 +159,10 @@ hr {
   width: 100%;
   text-align: center;    
   padding-top: 41px;
+}
+
+#hero-intro {
+  margin: 115px 0 24px;
 }
 
 .skills-container {
@@ -540,6 +543,11 @@ button:hover {
   
 }
 
+/* RESPONSIVE SECTION */
+/* 
+@media screen and (max-width: 1220px){
+  .
+} */
 
 
 

@@ -30,7 +30,7 @@
             <a href="./assets/imgs/My_New_Resume.pdf" id="resumeBtn">RESUME</a>
         </div>
 
-        <h1>Hi, I'm Kyle Barnhouse, a <br>front end developer.</h1>
+        <h1 id="hero-intro">Hi, I'm Kyle Barnhouse, a <br>front end developer.</h1>
         <div class="skills-container">
             <div class="skills">
                 MySQL
@@ -58,24 +58,27 @@
 
     <!-- My Work Start -->
     <div class="my-work-container">
-        <a id="my-work-links1" data-target=".modal1">
-            <div class="my-work-links">
-                <img class="myWorkImgs" src="./assets/imgs/Mockup_Recipe_laptop@2x.png" alt="">
-                <h3 class="my-work-titles">Responsive Recipes</h3>
-            </div>
-        </a>
-        <div id="middle-work">
+        <div class="my-work-links">
+            <a id="my-work-links1" data-target=".modal1">
+                <div>
+                    <img class="myWorkImgs" src="./assets/imgs/Mockup_Recipe_laptop@2x.png" alt="">
+                    <h3 class="my-work-titles">Responsive Recipes</h3>
+                </div>
+            </a>
+        </div>
+
+        <div id="middle-work" class="my-work-links">
             <a id="my-work-links2" data-target=".modal2">
-                <div class="my-work-links">
+                <div>
                     <img class="myWorkImgs" src="./assets/imgs/Mockup_DG_laptop@2x.png" alt="">
                     <h3 class="my-work-titles">DGTeamMate</h3>
                 </div>
             </a>
         </div>
 
-        <div id="right-work">
+        <div class="my-work-links">
             <a id="my-work-links3" data-target=".modal3">
-                <div class="my-work-links">
+                <div>
                     <img src="./assets/imgs/Macbook_Studio@2x.png" alt="skyline studios mock up" class="myWorkImgs">
                     <h3 class="my-work-titles">Skyline Studios</h3>
                 </div>
@@ -230,8 +233,8 @@
                 <img id="drone" src="./assets/imgs/drone.svg" alt="">
                 <h3>Drones</h3>
                 <hr>
-                <p>I love drones and new tech. Technology has always fascinated me and I'm excited to see
-                    what the future has in store. 
+                <p>Drones and new-age technology has always fascinated me. I'm excited to see
+                    what the future has in store.
                 </p>
             </div>
 
@@ -239,7 +242,8 @@
                 <img id="controller" src="./assets/imgs/game2.svg" alt="">
                 <h3>Games</h3>
                 <hr>
-                <p>Gaming is one of my favorite ways to unwind. I love solving puzzles and competing with my friends online. </p>
+                <p>Gaming is one of my favorite ways to unwind. I love solving puzzles and competing with my friends
+                    online.</p>
             </div>
         </div>
     </div>
