@@ -52,7 +52,7 @@ h3 {
   font-style: normal;
   line-height: 1.19;
   letter-spacing: normal;
-  margin: 8px auto 16px;
+  
   
 }
 
@@ -195,20 +195,20 @@ hr {
   justify-content: center;
   position: relative; 
   bottom: 152px;
+  padding: 0 2%;
 
 }
 
 .my-work-titles {
   color: #004d61;
-  position: absolute;
-  bottom: 33px;
-  margin: 0 24px;
-  border-bottom: solid #ff502f
+  margin: 16px 24px 32px 24px;  
+  display: inline-block;  
+  text-decoration: underline #ff502f;
+
 }
 
 .my-work-links {
-  min-width: 379px;
-  height: 376px;
+  width: 379px;  
   border-radius: 4px;
   box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
@@ -218,12 +218,16 @@ hr {
 #middle-work {
   position: relative;
   bottom: 53px;
-  margin: 0 33px;
+  margin: 0 3%;
 }
 
 .myWorkImgs {
-  width: 379px;
-  height: 280px;
+  width: 100%;
+  
+}
+
+#my-work-links1 {
+ 
 }
 
 .about-me {
@@ -259,7 +263,7 @@ hr {
 
 .interests-blocks {
   margin: 0 auto;
-  width: 250px;
+  min-width: 250px;
 }
 
 #basket {
@@ -543,11 +547,44 @@ button:hover {
   
 }
 
+
+
 /* RESPONSIVE SECTION */
-/* 
-@media screen and (max-width: 1220px){
-  .
-} */
 
+@media screen and (max-width: 1120px){
+  .my-work-titles{
+    font-size: 2.5vw;
+    
+  }
+}
 
+@media screen and (max-width: 1000px){
+  .interests-blocks{
+    width: 75%
 
+  }
+
+  .interests-container{
+    display: block; 
+  }
+}
+
+@media screen and (max-width: 775px){
+  .my-work-links{
+    margin: 0 auto;
+    
+  }
+  .my-work-titles{
+    font-size: 32px;
+  }
+
+  .my-work-container{
+    display: block;
+  }
+
+  #middle-work {
+    position: static;
+    bottom: 0;
+    margin: 40px auto;
+  }
+}
