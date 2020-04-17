@@ -337,88 +337,9 @@ hr {
 }
 
 
-/* #contact-me-header {
-  margin: 40px 0 16px 0;
-  color: #348498;
-  font-family: "quicksand";
-  font-style: normal;
-  font-weight: bold;
-}
-
-.card {
-  margin: 124px auto;
-  padding-top: 32px;
-  width: 586px;
-  height: 100%;
-  border-radius: 4px;
-  box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.16);
-  background-color: #ffffff;
-  text-align: center;
-
-}
-
-.card-intro {
-  border-top: solid #ff502f;
-  
-  margin: 0 24px;
-}
-
-form {  
-  padding: 52px 100px 0 100px;
-  align-content: center;
-  text-align: left;
-}
-
-label {
-  display: block;
-  text-align: left;
-  margin: 0 0 8px;
-}
-
-input {
-  width: 100%;
-  height: 40px;  
-  border-radius: 4px;
-  box-sizing: border-box;
-  border: solid 1px #348498;
-  display: block;
-}
-
-textarea {
-  border-radius: 4px;  
-  box-sizing: border-box;
-  border: solid 1px #348498;
-  margin: 0px;
-  max-width: 100%;
-  height: 185px;
-  min-width: 100%;
-  width: 399px;
-  min-height: 185px;  
-} */
-
-
 button:hover {
   background-color: #ff502f;;
 }
-
-
-/* .submit-form-btn {
-  width: 106px;
-  height: 48px;
-  border-radius: 25px;  
-  margin: 32px 0 48px;
-  position: relative;
-  font-family: "sofia-pro";
-  font-size: 16px;
-  background-color: grey;
-  color: white;
-  border: none;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-} */
 
 .bg-modal, .modal1, .modal2, .modal3{
   width: 100%;
@@ -645,6 +566,9 @@ button:hover {
   .my-work-titles{
     font-size: 24px;
   }
+  .about-me {
+    text-align: left;
+  }
 
   .interests-container{
     padding: 0;
@@ -653,7 +577,7 @@ button:hover {
   .interests-blocks{
     width: 100%;
     margin: 48px auto;
-
+    text-align: center;
   }
 
   .contact-me-card{
