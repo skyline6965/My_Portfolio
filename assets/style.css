@@ -88,12 +88,33 @@ hr {
   width: 40px; 
 }
 
+.main-bg {
+  background-color: #004d61;
+  height: 768px;    
+  width: 100%;
+}
+
+.bottom-bg {
+  position: relative;
+  bottom: 271px;
+  background-color: #ff502f;
+  height: 271px;
+  width: 100%;
+  z-index: -1;
+}
+
+.main-content {
+  padding: 32px;
+}
+
+
 .intro-line {
   border: solid;
   height: 70px;
   width: 1px;
   position: absolute;
-  left: 84px;
+  left: 7%;
+  bottom: 27px;
   top: 0;
   border-right: none;
   border-top: none;
@@ -139,7 +160,8 @@ hr {
   color: white;
   text-align: left;
   position: relative;
-  left: 94px;
+  left: 7%;
+  bottom: 28px;
   font-size: 24px;
   font-weight: 250;
   font-stretch: normal;
@@ -151,25 +173,31 @@ hr {
   margin: 0;
 }
 
+.short-text{
+  display: none;
+}
+
 
 
 .hero {
-  background-color: #004d61;
+  /* background-color: #004d61; */
   height: 768px;    
-  width: 100%;
+  /* width: 100%; */
   text-align: center;    
   padding-top: 41px;
 }
+
 
 #hero-intro {
   margin: 115px 0 24px;
 }
 
 .skills-container {
-  width: 40%;
+  max-width: 495px;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   color: #5bd1d7;
   font-family: "quicksand";
@@ -282,27 +310,20 @@ hr {
   margin-bottom: 12px;
 }
 
-.contact-me {
-  width: 100%;
-  height: 271px;
-  background-color: #ff502f;
-  text-align: center;
-}
-
 .contact-me-card {
-  width: 586px;
-  height: 289px;
+  width: 586px; 
   background-color: white;
   box-shadow: 0px 3px 24px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   position: relative;
   bottom: 100px;
   margin: 0 auto;
-  padding: 56px;
+  padding: 64px;
+  text-align: center;
 }
 
 .contact-me-header {
-  margin: 24px 0 16px 0;
+  margin: 24px 0 24px 0;
 }
 
 #email-link {
@@ -405,6 +426,7 @@ button:hover {
   background-color: rgba( 0, 0, 0, 0.85 );  
   position: fixed;
   top: 0;
+  right: 0;
   justify-content: center;
   align-items: center;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
@@ -551,7 +573,7 @@ button:hover {
 
 /* RESPONSIVE SECTION */
 
-@media screen and (max-width: 1120px){
+@media screen and (max-width: 1220px){
   .my-work-titles{
     font-size: 2.5vw;
     
@@ -561,7 +583,6 @@ button:hover {
 @media screen and (max-width: 1000px){
   .interests-blocks{
     width: 75%
-
   }
 
   .interests-container{
@@ -569,13 +590,14 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 775px){
+@media screen and (max-width: 768px){
   .my-work-links{
     margin: 0 auto;
-    
+    width: 80%;
+
   }
   .my-work-titles{
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .my-work-container{
@@ -586,5 +608,70 @@ button:hover {
     position: static;
     bottom: 0;
     margin: 40px auto;
+  }
+
+  .short-text { 
+    display: inline-block; 
+
+  }
+  .full-text { 
+    display: none; 
+
+  }
+
+}
+
+@media screen and (max-width: 680px){
+  .contact-me-card {
+    width: 95%;
+  }
+  
+} 
+
+@media screen and (max-width: 540px){
+  #hero-intro {
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .skills-container{
+    justify-content: left;
+  }
+
+  .my-work-links{
+    width: 100%;
+  }
+
+  .my-work-titles{
+    font-size: 24px;
+  }
+
+  .interests-container{
+    padding: 0;
+  }
+
+  .interests-blocks{
+    width: 100%;
+    margin: 48px auto;
+
+  }
+
+  .contact-me-card{
+    width: 100%;
+  }
+
+  #interests-header{
+    text-align: left;
+  }
+
+
+  
+} 
+
+@media screen and (max-width: 475px){
+  #email-link{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
   }
 }
