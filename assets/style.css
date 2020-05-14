@@ -139,6 +139,13 @@ hr {
   margin: 8px;  
 }
 
+.mediaBtn:hover {
+  background-color: #ff502f;
+  color: white;
+
+  
+}
+
 #resumeBtn {
   width: 114px;
   height: 40px;
@@ -153,6 +160,11 @@ hr {
   border-radius: 25px;
   margin: 8px;
   color: #ff502f;
+}
+
+#resumeBtn:hover {
+  background-color: #ff502f;
+  color: white;
 }
 
 
@@ -231,17 +243,38 @@ hr {
   color: #004d61;
   margin: 16px 24px 32px 24px;  
   display: inline-block;  
-  text-decoration: underline #ff502f;
-
+  text-decoration: underline #ff502f;  
+  
 }
+
+
+/* .my-work-titles:hover {
+  transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+  
+} */
 
 .my-work-links {
   width: 379px;  
+  height: 100%;
   border-radius: 4px;
   box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   margin: 0;
+  transition: .3s;
+  
 }
+
+.work-content {
+  transition: opacity ease-out 250ms;
+}
+
+
+
+/* .my-work-links:hover {
+  width: 425px;
+  transition-timing-function: ease-in-out;
+  opacity: 0.4;
+} */
 
 #middle-work {
   position: relative;
@@ -254,9 +287,7 @@ hr {
   
 }
 
-#my-work-links1 {
- 
-}
+
 
 .about-me {
   margin-bottom: 200px;
@@ -294,9 +325,9 @@ hr {
   min-width: 250px;
 }
 
-#basket {
+/* #basket {
 
-}
+} */
 #drums {
   margin-top: 7px;
   margin-bottom: 7px;
@@ -336,6 +367,14 @@ hr {
   line-height: 20px;
 }
 
+#email-link:hover {
+  font-size:20px;
+  transition-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  text-decoration: none;
+}
+
 
 button:hover {
   background-color: #ff502f;;
@@ -355,10 +394,9 @@ button:hover {
 }
 
 .modal-content {
-  width: 792px;
-  height: 313px;
+  width: 792px;  
   background-color: white;
-  padding: 0px 40px;
+  padding: 0 32px 32px;
   position: relative;
 }
 
@@ -453,9 +491,9 @@ button:hover {
   margin-bottom: 32px;
 }
 
-#tech-headline {
+/* #tech-headline {
   
-}
+} */
 
 .project-links {
   float: left;
@@ -542,6 +580,22 @@ button:hover {
 
 }
 
+@media screen and (max-width: 860px){
+  .modal-content {
+    width: 80%;
+    padding: 24px;
+  }
+  .modal-hr{
+    display: none;
+  }
+  #view-source {
+    margin: 0;
+  }
+  #visit-site {
+    margin-right: 24px;
+  }
+}
+
 @media screen and (max-width: 680px){
   .contact-me-card {
     width: 95%;
@@ -592,10 +646,40 @@ button:hover {
   
 } 
 
+/* PHONE SCREEN */
+
 @media screen and (max-width: 475px){
   #email-link{
     display: flex;
     justify-content: center;
     font-size: 14px;
+  }
+
+  .modal-content {
+    display: inline-grid;
+  }
+  .modal-left{
+    width: 100%;
+  }
+  .modal-right{
+    width: 100%;
+    float: none;
+  }
+  .modal-hr {
+    display: none;
+  }
+  #visit-site{
+    margin: 0 24px 0 0;
+  }
+  #view-source{
+    margin: 0;
+  }
+  .close-btn,.close-btn2,.close-btn3{
+    
+    right: 12px;
+  }
+  .modal-header{
+    margin-top: 16px;
+    font-size: 24px;
   }
 }
